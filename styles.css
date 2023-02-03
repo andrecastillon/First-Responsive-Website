@@ -20,7 +20,8 @@ body {
   justify-content: center;
   background-color: #2BCEC0;
   color: white;
-  padding-block: 6rem;
+  padding: 5rem;
+  
 }
 
 .container-two {
@@ -28,20 +29,44 @@ body {
   font-weight: Regular 400;
   background-color: #1B1B1B;
   color: white;
-  padding: 20px;
   display: flex;
   text-align: center;
   gap: 5rem;
-  padding-block: 6rem;
+  padding: 5rem;
 }
 
 .box-one .box-two .box.three {
   justify-content: space-around;
   padding: 50px;
+  display: flex;
+  align-items: center;
   
 }
 
 h2 {
   font-family: Baskervville;
   font-weight: Regular 400;
+}
+
+p.rectangle {
+  width: 200px;
+  height: 30px;
+  background: #F46730;
+}
+
+@media (max-width: 580px) {
+  body{
+    border: 5px;
+  }
+  
+  .container-one {
+    background-color: #33A8DD;
+    padding: 5px;
+  }
+
+  .container-two {
+    background-color: white;
+    color: #1B1B1B;
+    flex-direction: column;
+  }
 }
