@@ -5,10 +5,11 @@ font-weight:Regular 400 */
 
 
 body {
+  border: 1rem;
   background-color: white;
-  margin: 15px;
   display: grid;
   grid-template-rows: 1fr 1fr;
+  
 }
 
 .container-one {
@@ -19,6 +20,7 @@ body {
   justify-content: center;
   background-color: #2BCEC0;
   color: white;
+  padding-block: 6rem;
 }
 
 .container-two {
@@ -29,11 +31,13 @@ body {
   padding: 20px;
   display: flex;
   text-align: center;
+  gap: 5rem;
+  padding-block: 6rem;
 }
 
 .box-one .box-two .box.three {
   justify-content: space-around;
-  padding:
+  padding: 50px;
   
 }
 
