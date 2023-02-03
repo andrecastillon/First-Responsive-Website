@@ -1,3 +1,43 @@
+/* font-family: 'Baskervville', serif;
+font-weight: Regular 400 or Regular 400 Italic: 
+font-family: 'Roboto', sans-serif;
+font-weight:Regular 400 */
+
+
 body {
-  background-color: ;
+  background-color: white;
+  margin: 15px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.container-one {
+  font-family: Baskervville;
+  font-weight: Regular 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2BCEC0;
+  color: white;
+}
+
+.container-two {
+  font-family: Roboto;
+  font-weight: Regular 400;
+  background-color: #1B1B1B;
+  color: white;
+  padding: 20px;
+  display: flex;
+  text-align: center;
+}
+
+.box-one .box-two .box.three {
+  justify-content: space-around;
+  padding:
+  
+}
+
+h2 {
+  font-family: Baskervville;
+  font-weight: Regular 400;
 }
