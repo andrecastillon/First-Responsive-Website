@@ -3,13 +3,32 @@ font-weight: Regular 400 or Regular 400 Italic:
 font-family: 'Roboto', sans-serif;
 font-weight:Regular 400 */
 
+/* @media (max-width: 600px) {
+  body{
+    border: .3rem;
+    display: grid;
+    grid-template-rows: 25% 75%;
+  }
+  
+  .container-one {
+    background-color: #33A8DD;
+    padding: .3rem;
+    height: 12.5rem;
+    border-bottom: 20px;
+  }
+
+  .container-two {
+    background-color: white;
+    color: #1B1B1B;
+    flex-direction: column;
+  }
+} */
 
 body {
   border: 1rem;
   background-color: white;
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  
+  grid-template-columns: 1fr;
 }
 
 .container-one {
@@ -18,30 +37,40 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #2BCEC0;
+  background-color: #33A8DD;
   color: white;
-  padding: 5rem;
-  
+  height: 35vh;
 }
 
 .container-two {
   font-family: Roboto;
   font-weight: Regular 400;
-  background-color: #1B1B1B;
-  color: white;
-  display: flex;
-  text-align: center;
-  gap: 5rem;
-  padding: 5rem;
-}
-
-.box {
-  justify-content: space-around;
-  padding: 50px;
+  background-color: white;
+  color: #1B1B1B;
   display: flex;
   align-items: center;
   flex-direction: column;
-  
+  justify-content: center;
+  gap: 3em;
+  height: 800px;
+}
+
+.rectangle-one {
+  width: 200px;
+  height: 30px;
+  background: #33A8DD;
+}
+
+.rectangle-two {
+  width: 200px;
+  height: 30px;
+  background: #F46730;
+}
+
+.rectangle-three {
+  width: 200px;
+  height: 30px;
+  background: #2BCEC0;
 }
 
 h2 {
@@ -49,42 +78,43 @@ h2 {
   font-weight: Regular 400;
 }
 
-.rectangle-one {
-  width: 200px;
-  height: 30px;
-  background: #33A8DD;
-  margin: auto;
+.box {
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  height: 200px;
+  width: 90%;
+  margin: 0 auto;
 }
 
-.rectangle-two {
-  width: 200px;
-  height: 30px;
-  background: #F46730;
-  margin: auto;
-}
-
-.rectangle-three {
-  width: 200px;
-  height: 30px;
-  background: #2BCEC0;
-  margin: auto;
-}
-
-@media (max-width: 580px) {
-  body{
-    border: 5px;
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  body {
+    border: 1rem;
+    background-color: white;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 100vh;
   }
   
   .container-one {
-    background-color: #33A8DD;
-    padding: 5px;
-    height: 200px;
-    margin-bottom: 20px;
+    background-color: #2BCEC0;
+    height: 50vh;
+  }
+  
+  .container-two {
+    background-color: #1B1B1B;
+    color: white;
+    gap: 5rem;
+    flex-direction: row;
+    height: 50vh;
+    justify-content: space-between;
   }
 
-  .container-two {
-    background-color: white;
-    color: #1B1B1B;
-    flex-direction: column;
+  .box {
+    width: 300px;
   }
+  
 }
